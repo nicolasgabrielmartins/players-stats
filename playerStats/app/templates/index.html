@@ -17,7 +17,7 @@
         <p>Pagina destinada as stats dos jogadores mais dominantes atualmente na NBA!</p>
         <ul>
             {% for x in Players %}
-        <li>{{ x.name }} {{ x.lastname }} - Vitórias: {{ x.wins }}, Derrotas: {{ x.loses }}</li>
+        <li><a href="details/{{ x.id }}">{{ x.name }} {{ x.lastname }} </li>
         {% empty %}
         <li>Nenhum jogador encontrado.</li>
         {% endfor %}
