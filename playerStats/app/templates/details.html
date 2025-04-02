@@ -2,13 +2,14 @@
 {% block title %} Pagina Principal {% endblock title%}
 {% block content %}
         <h1>{{ Players.name }} {{ Players.lastname }}</h1>
-  
-        <p>AGE: {{ Players.age }}</p>
-        <p>MIN: {{ Players.minutes_played }}</p>
-        <p>WIN: {{ Players.wins }}</p>
-        <p>LOS: {{ Players.loses }}</p>
-        <p>PTS: {{ Players.points_per_game }}</p>
 
-        <p>Back to <a href="/app">Players</a></p>
+        <ul class="list-group list-group-flush">
+        <li class="list-group-item">AGE: {{ Players.age }}</li>
+        <li class="list-group-item">MIN: {{ Players.minutes_played }}</li>
+        <li class="list-group-item">WIN: {{ Players.wins }}</li>
+        <li class="list-group-item">LOS: {{ Players.loses }}</li>
+        <li class="list-group-item">PTS: {{ Players.points_per_game }}</li>
+        </ul>
 
+        <footer> Back to <a href="/app">Players</a></footer>
 {% endblock content %}
